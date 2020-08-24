@@ -15,11 +15,11 @@ boo is a commit message generator
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g boo
+$ npm install -g boo-cli
 $ boo COMMAND
 running command...
 $ boo (-v|--version|version)
-boo/0.0.0 darwin-x64 node-v14.4.0
+boo-cli/0.0.4 darwin-x64 node-v14.4.0
 $ boo --help [COMMAND]
 USAGE
   $ boo COMMAND
@@ -28,28 +28,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`boo hello [FILE]`](#boo-hello-file)
+* [`boo `](#boo-)
 * [`boo help [COMMAND]`](#boo-help-command)
+* [`boo jira [JIRA]`](#boo-jira-jira)
 
-## `boo hello [FILE]`
+## `boo `
 
-describe the command here
+boo is a commit message manager
 
 ```
 USAGE
-  $ boo hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ boo
 
 EXAMPLE
-  $ boo hello
-  hello world from ./src/hello.ts!
+  $ boo
+  $ boo jira add/delete/update/list
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/document/boo/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/index.ts](https://github.com/cli/boo/blob/v0.0.4/src/commands/index.ts)_
 
 ## `boo help [COMMAND]`
 
@@ -67,4 +63,27 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+
+## `boo jira [JIRA]`
+
+查看和增添jira信息
+
+```
+USAGE
+  $ boo jira [JIRA]
+
+ARGUMENTS
+  JIRA  添加第二个参数list / add 来展示/增添 pr 功能
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ boo hello
+  hello world from ./src/hello.ts!
+```
+
+_See code: [src/commands/jira.ts](https://github.com/cli/boo/blob/v0.0.4/src/commands/jira.ts)_
 <!-- commandsstop -->
