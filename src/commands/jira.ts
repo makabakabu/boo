@@ -30,7 +30,6 @@ hello world from ./src/hello.ts!
     // 如果有argv的话
     switch (argv[0]) {
     case 'list':
-      process.stdout.write('something in it')
       list()
       break
     case 'add':

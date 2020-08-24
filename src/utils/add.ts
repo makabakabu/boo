@@ -6,7 +6,7 @@ import * as path from 'path'
 // 编辑
 
 export const add = async () => {
-  const response = await prompt([{
+  const response: any = await prompt([{
     type: 'input',
     name: 'name',
     message: 'issue name?',
