@@ -116,7 +116,7 @@ $ boo jira add/delete/update/list
     // 加上emoji
     // 调整jira号的位置， 然后删除过期2个星期的jira
     schedule(jiraNameList)
-    exec(`git commit -m "${commitTypeName}(${selectedScope}): ${jiraNameStr} ${commitTypeEmoji}${jiraDescription}"`, (error, stdout, stderr) => {
+    exec(`git commit -m "${commitTypeName}[${selectedScope}]: ${jiraNameStr} ${commitTypeEmoji}${jiraDescription}"`, (error, stdout, stderr) => {
       if (error) {
         console.log(`error: ${error.message}`)
         return
