@@ -1,1 +1,9 @@
-{"jiraList":[{"Name":"1939","Due Date":"0908","Description":"哈哈哈哈"},{"Name":"adsf","Due Date":"asdf","Description":"asdf"},{"Name":"daf","Due Date":"asdf","Description":"asdf"}]}
+{
+  "jiraList": [
+    {
+      "Name": "issue1",
+      "Due Date": "0808",
+      "Description": "这是一个简单的描述"
+    }
+  ]
+}
