@@ -19,7 +19,7 @@ $ npm install -g boo-cli
 $ boo COMMAND
 running command...
 $ boo (-v|--version|version)
-boo-cli/0.0.9 darwin-x64 node-v14.4.0
+boo-cli/0.0.10 darwin-x64 node-v14.4.0
 $ boo --help [COMMAND]
 USAGE
   $ boo COMMAND
@@ -45,7 +45,7 @@ EXAMPLE
   $ boo jira add/delete/update/list
 ```
 
-_See code: [src/commands/commit.ts](https://github.com/cli/boo/blob/v0.0.9/src/commands/commit.ts)_
+_See code: [src/commands/commit.ts](https://github.com/cli/boo/blob/v0.0.10/src/commands/commit.ts)_
 
 ## `boo help [COMMAND]`
 
@@ -85,5 +85,5 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/jira.ts](https://github.com/cli/boo/blob/v0.0.9/src/commands/jira.ts)_
+_See code: [src/commands/jira.ts](https://github.com/cli/boo/blob/v0.0.10/src/commands/jira.ts)_
 <!-- commandsstop -->
