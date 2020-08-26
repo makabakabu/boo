@@ -19,7 +19,7 @@ $ npm install -g boo-cli
 $ boo COMMAND
 running command...
 $ boo (-v|--version|version)
-boo-cli/0.0.5 darwin-x64 node-v14.4.0
+boo-cli/0.0.6 darwin-x64 node-v14.4.0
 $ boo --help [COMMAND]
 USAGE
   $ boo COMMAND
@@ -28,24 +28,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`boo `](#boo-)
+* [`boo commit`](#boo-commit)
 * [`boo help [COMMAND]`](#boo-help-command)
 * [`boo jira [JIRA]`](#boo-jira-jira)
 
-## `boo `
+## `boo commit`
 
 boo is a commit message manager
 
 ```
 USAGE
-  $ boo
+  $ boo commit
 
 EXAMPLE
   $ boo
   $ boo jira add/delete/update/list
 ```
 
-_See code: [src/commands/index.ts](https://github.com/cli/boo/blob/v0.0.5/src/commands/index.ts)_
+_See code: [src/commands/commit.ts](https://github.com/cli/boo/blob/v0.0.6/src/commands/commit.ts)_
 
 ## `boo help [COMMAND]`
 
@@ -85,5 +85,5 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/jira.ts](https://github.com/cli/boo/blob/v0.0.5/src/commands/jira.ts)_
+_See code: [src/commands/jira.ts](https://github.com/cli/boo/blob/v0.0.6/src/commands/jira.ts)_
 <!-- commandsstop -->
