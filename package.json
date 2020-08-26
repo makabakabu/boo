@@ -1,7 +1,7 @@
 {
   "name": "boo-cli",
   "description": "boo is a commit message generator",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "shenxiang.feng",
   "bin": {
     "boo": "./bin/run"
@@ -12,6 +12,7 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
     "chalk": "^4.1.0",
+    "cli-ux": "^5.4.10",
     "date-fns": "^2.15.0",
     "execa": "^4.0.3",
     "inquirer": "^7.3.3",
