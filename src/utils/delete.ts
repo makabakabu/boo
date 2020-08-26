@@ -28,6 +28,6 @@ export const deleteJira = async () => {
     })
   }
   // console.log(jiraIssueNameList.find())
-  fs.writeFileSync(path.resolve('src/assets/jira/index.json'), JSON.stringify({jiraList: newJiraList}))
+  fs.writeFileSync(path.resolve('../assets/jira/index.json'), JSON.stringify({jiraList: newJiraList}))
   cli.table(newJiraList, {Name: {}, 'Due Date': {}, Description: {}})
 }
