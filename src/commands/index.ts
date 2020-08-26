@@ -24,16 +24,21 @@ $ boo jira add/delete/update/list
     const packageJsonPath = path.join(process.cwd(), 'package.json')
     const projectBooPath = path.join(process.cwd(), 'boo.config.js')
     const packageJsonBooPath = get(require(packageJsonPath), ['boo', 'configFilePath'])
+    // eslint-disable-next-line node/no-missing-require
+    const defaultConfig = require('../assets').default
     switch (true) {
-    case packageJsonBooPath !== undefined && fs.existsSync(path.join(process.cwd(), packageJsonBooPath)):
-      return require(path.join(process.cwd(), packageJsonBooPath))
+    case packageJsonBooPath !== undefined && fs.existsSync(path.join(process.cwd(), packageJsonBooPath)): {
+      const config = require(path.join(process.cwd(), packageJsonBooPath))
+      return {...defaultConfig, ...config}
+    }
 
-    case fs.existsSync(projectBooPath):
-      return require(projectBooPath)
+    case fs.existsSync(projectBooPath): {
+      const config = require(projectBooPath)
+      return {...defaultConfig, ...config}
+    }
 
     default:
-      // eslint-disable-next-line node/no-missing-require
-      return require('../assets').default
+      return defaultConfig
     }
   }
 
