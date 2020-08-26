@@ -37,6 +37,6 @@ export const update = async () => {
     return certainJira
   })
   // console.log(jiraIssueNameList.find())
-  fs.writeFileSync(path.resolve(process.cwd(), '../assets/jira/index.json'), JSON.stringify({jiraList: newJiraList}))
+  fs.writeFileSync(path.resolve(__dirname, '../assets/jira/index.json'), JSON.stringify({jiraList: newJiraList}))
   cli.table(newJiraList, {Name: {}, 'Due Date': {}, Description: {}})
 }

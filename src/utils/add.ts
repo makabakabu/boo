@@ -24,6 +24,6 @@ export const add = async () => {
     'Due Date': response.dueDate || '',
     Description: response.description || '',
   })
-  fs.writeFileSync(path.resolve(process.cwd(), '../assets/jira/index.json'), JSON.stringify(jiraList))
+  fs.writeFileSync(path.resolve(__dirname, '../assets/jira/index.json'), JSON.stringify(jiraList))
   cli.table(jiraList.jiraList, {Name: {}, 'Due Date': {}, Description: {}})
 }
