@@ -1,9 +1,1 @@
-{
-  "jiraList": [
-    {
-      "Name": "issue1",
-      "Due Date": "0808",
-      "Description": "这是一个简单的描述"
-    }
-  ]
-}
+{"jiraList":[{"Name":"issue1","Due Date":"0808","Description":"这是一个简单的描述"}]}
